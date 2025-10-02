@@ -3,16 +3,7 @@ fun main() {
     val clyde = Cat("Clyde", 5, 5)
     val flathead = Cat("Flathead", 7, 10)
     val cupra = Cat("Cupra", 2, 7)
-    binnie.walk()
-    clyde.walk()
-    repeat(2){
-        flathead.eat()
-    }
-    println(flathead)
-    repeat(4){
-        cupra.walk()
-    }
-    println(cupra)
+
+    println(if(binnie.eat(9)) "Finished eating" else "Cannot eat more")
     println(binnie)
-    println(clyde)
 }
